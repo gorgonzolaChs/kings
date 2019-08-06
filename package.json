@@ -1,0 +1,24 @@
+{
+  "name": "kings",
+  "version": "1.0.0",
+  "description": "Look at the README pls",
+  "main": "index.js",
+  "dependencies": {
+    "uniqid": "^5.0.3",
+    "nanoid": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorgonzolaChs/kings.git"
+  },
+  "author": "orcus050 & gorgonzolaChs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gorgonzolaChs/kings/issues"
+  },
+  "homepage": "https://github.com/gorgonzolaChs/kings#readme"
+}
