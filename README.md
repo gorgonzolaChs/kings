@@ -14,11 +14,11 @@ My name is **gorgonzolaChs**, and me and my pal **orcus50** decided to play arou
 
 > Or just run server.js
 
-## In Depth Description 
+## In Depth Description :mag_right:
 
 Have you ever wanted to settle and argument through war?  Or desired to test your tactical knowledge in a 2D fight for domination?  Well, have we got the game for you.  Embark on an enticing conquest across the plains of Kings where the stakes are high and strategists prevail.  Gain control of new land and fight for your territory while building defenses and upgrading your unit production.  But watch out for competition, there are others out there that wish to take what is yours.  Be careful out there and have fun on your quest to rule in Kings. 
 
-## Features 
+## Features :beetle:
 
 - Can build two types of structures, each of which are costly but provide a considerable bonus.
 - If armies are cut off from your capital they will immediately be disbanded.  No army wants to stick around without a way back home after all.  Disbanded armies will appear gray and can be captured by any army for no combat loss.
