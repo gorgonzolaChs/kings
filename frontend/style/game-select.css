@@ -1,0 +1,100 @@
+/* Main menu */
+
+.main-menu {
+
+    position: relative;
+
+    margin-top: 180px;
+    margin-left: calc(50% - 500px);
+    margin-right: 20%;
+
+    padding-top: 30px;
+
+    width: 1000px;
+    height: 500px;
+
+    border: 1px solid var(--secondary);
+    background: var(--primary);
+
+}
+
+#main-menu-header {
+
+    height: 80px;
+    font-size: 80px;
+    text-align: center;
+    
+    color: var( --secondary );
+
+}
+
+/* Create / join Sections */
+
+#main-menu-create{ left: 1%; }
+#main-menu-join{ left: 51%; }
+
+.main-menu-section {
+
+    position: absolute;
+
+    top: 150px;
+    width: 49%;
+    height: 150px;
+}
+
+.section-head{
+    
+    text-align: center;
+    font-size: 20px;
+    
+    width: 60%;
+    margin-left: 20%;
+
+    color: var( --secondary );
+    border-bottom: 1px solid var( --secondary );
+}
+
+/* Section Items */
+
+
+.template-game-item, .game-item{
+
+    position: relative;
+    padding: 0 !important;
+}
+
+.template-game-item:hover, .game-item:hover{
+    
+    background: var(--primary-dark);
+}
+
+.template-game-name, .game-name{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    line-height: 20px;
+    margin: 10px;
+    font-size: 20px;
+}
+.template-game-pass, .game-pass{
+
+    position: absolute;
+    right: 20%;
+    top: 0;
+
+    line-height: 20px;
+    margin: 10px;
+    font-size: 20px;
+}
+.template-player-count, .player-count{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    line-height: 20px;
+    margin: 10px;
+    font-size: 20px;
+}

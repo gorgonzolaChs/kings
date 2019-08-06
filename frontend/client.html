@@ -1,0 +1,146 @@
+
+<!-- CDN s -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+
+<!-- Scripts -->
+<script src="toggle-display.js"></script>
+
+<script src="client-in.js"></script>
+<script src="client-out.js"></script>
+
+<!--script src="in-out.js"></script-->
+<script src="util.js"></script>
+<script src="map-control.js"></script>
+<script src="map-event.js"></script>
+
+
+
+
+<!-- Style -->
+<link rel="stylesheet" type="text/css" href="style/global.css">
+
+<link rel="stylesheet" type="text/css" href="style/game-select.css">
+<link rel="stylesheet" type="text/css" href="style/password-enter.css">
+<link rel="stylesheet" type="text/css" href="style/game-lobby.css">
+<link rel="stylesheet" type="text/css" href="style/main-game.css">
+
+<link rel="stylesheet" type="text/css" href="style/toggle-display.css">
+
+
+
+<!-- Page -->
+
+<div class = 'main-menu' id='main-page' > 
+
+    <div id = 'main-menu-header' > Game of Kings </div>
+
+    <!-- Create Game -->
+
+    <div id = 'main-menu-create' class = 'main-menu-section' >
+        <p class = 'section-head'>  Create Game </p>
+
+        <input id = 'game-name-input' placeholder= 'Game Name' >
+        <input id = 'game-pass-input' placeholder= 'Game Password' >
+        <select id = 'game-type-input'>
+            <option value="Small">Small</option>
+            <option value="Large">Large</option>
+        </select>
+
+        <button onclick='createGame()'>
+            Create Game    
+        </button>
+
+    </div>
+
+    <!-- Join Game -->
+
+    <div id = 'main-menu-join' class = 'main-menu-section'>
+        <p class = 'section-head'>  Join Game </p>
+
+        <div class = 'template-game-item menu-item' onclick="joinGame(this.id)">
+
+            <div class ='template-game-name'> Game Name </div>
+            <div class ='template-game-pass'><img src='./imgs/locked.png' height='20px' width='20px'/></div>
+            <div class ='template-player-count'> 4 / 10 </div>
+
+        </div>
+    </div>        
+</div>
+
+<!-- Enter Game Password -->
+
+<div class = 'main-menu enter-password' id='pass-page'>
+
+    <div id = 'main-menu-header' > Please Enter The Password </div>
+    <div class = 'password-section'>
+        <p class = 'section-head'>  </p>
+        <input id = 'display-name' placeholder = 'Display Name'>
+        <input id = 'password-input' placeholder= 'Password' >
+        <button onclick='submitPass()'>
+            Submit Password & Name  
+        </button>
+        <button onclick='changePage("main-page")'>
+            Back   
+        </button>
+    </div>
+</div>
+
+<!-- Lobby -->
+<div class = 'main-menu game-lobby' id='lobby-page'>
+
+    <div id = 'main-menu-header'> Game Name </div>
+
+    <textarea rows="4" cols="50" readonly id='lobby-chat-field'> </textarea>
+    <input id='lobby-chat-box' placeholder="Type to chat" onkeydown="submitChat(this.id)"> </input>
+
+    <div id = 'lobby-list'>
+
+        <div class = 'client-connected-placeholder'>
+            <div class = 'color-profile' style='background: red'>  </div>
+            <div class = 'username-profile'> JimBob69 </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Game itself -->
+
+<div class = 'main-menu main-game' id = 'game-page'>
+
+    <canvas onmousedown="mouseDown(event)" onmousemove="mouseMove(event)" onmouseup="mouseUp(event)" id='game-canvas' width=700 height=700></canvas>
+
+    <textarea rows="4" cols="50" readonly id='game-chat-field'> </textarea>
+    <input id='game-chat-box' placeholder="Type to chat" onkeydown="submitChat(this.id)"> </input>
+
+    <div id='game-info-display'>
+
+        <div> Units : 
+            <div id='units-val' >99999</div> 
+        </div>
+
+        <div>Tiles : 
+            <div id='tiles-val' >99999</div> 
+        </div>
+        
+        <div>Killed : 
+            <div id='killed-val' >99999</div> 
+        </div>
+        
+        <div>Captures : 
+            <div id='caputred-val' >99999</div> 
+        </div>
+        
+        <div>Producers : 
+            <div id='producers-val' >99999</div> 
+        </div>
+        
+        <div>Produced : 
+            <div id='produced-val' >99999</div> 
+        </div>
+
+    </div>
+
+</div>

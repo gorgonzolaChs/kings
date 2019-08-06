@@ -1,0 +1,84 @@
+/* Font */
+
+@font-face {
+    font-family: 'Breathe';
+    src: url("Breathe Fire II.otf") format("opentype");
+}
+
+
+/* Colors */
+
+html {
+
+    --primary: rgb(83, 83, 83);
+    --primary-dark: rgb(42, 42, 42);
+
+    --secondary: rgb(255, 255, 255);
+
+}
+
+:focus { outline: none; }
+
+
+/* Game style */
+
+html {
+
+    background-image: url('http://wiki.thedarkmod.com/images/f/f7/Brick_Tut_27.jpg');
+    font-family: 'Breathe';
+
+}
+
+
+/* Re-useable element */
+
+input, select, button, .menu-item, textarea {
+
+    border: 1px solid var(--secondary);
+    border-radius: 0;
+    background: var(--primary);
+    
+    text-align: center;
+    color: white;
+    font-family: 'Breathe';
+    
+    margin-top: 10px;
+    margin-left: 25%;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+
+    transition: all 0.2s ease-in-out;
+
+    cursor: pointer;
+
+}
+
+input:focus {
+
+    border: 3px solid var(--secondary);
+
+}
+
+button:hover {
+
+    background: var(--primary-dark);
+
+}
+
+textarea {
+    
+    background: var(--primary-dark);
+    resize: none;
+    
+    width: 50%;
+    height: 60%;
+
+    
+    text-align: left;
+    padding: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    overflow: scroll;
+
+}

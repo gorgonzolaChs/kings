@@ -1,0 +1,74 @@
+#lobby-chat-field{
+    text-align: left;
+    padding: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    overflow: scroll;
+
+    position: absolute;
+    right: 10px;
+    top: 150px;
+
+}
+
+#lobby-chat-box {
+    
+    position: absolute;
+
+    bottom : 10px;
+    right: 10px;
+
+}
+
+#lobby-list{
+
+    border: 1px solid black;
+
+    position: absolute;
+
+    left: 10px;
+    bottom: 10px;
+    width: calc(50% - 30px);
+    height: 69%;
+
+    border: 1px solid var(--secondary);
+
+}
+
+
+.client-connected-placeholder{
+
+    position: relative;
+
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 90%;
+    height: 40px;
+
+}
+
+.color-profile{
+
+    position: absolute;
+
+    border: 1px solid var(--secondary);
+    
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    
+
+}
+
+.username-profile {
+
+    position: absolute;
+
+    color: var(--secondary);
+
+    font-size: 30px;
+    margin: 5px;
+    right: 0;
+
+}
